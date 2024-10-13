@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT PORTAL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="reqrefund.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="bcplogo.jpg" alt="logo">
+        <h2>STUDENT PORTAL</h2>
+      </div>
+      <ul class="links">
+        <h4>Home</h4>
+        <li>
+          <span class="material-symbols-outlined">person</span>
+          <a href="homeprofile.html">Profile</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">grade</span>
+          <a href="grades.html">Grades</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">event</span>
+          <a href="events.html">Events</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">dashboard</span>
+          <a href="ewallet.html">E-wallet</a>
+        </li>
+        <hr>
+        <h4>Account</h4>
+        <li>
+          <span class="material-symbols-outlined">bar_chart</span>
+          <a href="overview.html">Overview</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">mail</span>
+          <a href="concern.html">Concern</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">settings</span>
+          <a href="setting.html">Settings</a>
+        </li>
+        <li class="logout-link">
+          <span class="material-symbols-outlined">logout</span>
+          <a href="splogin.html" "logout()">Log Out</a>
+    </div>
+    <script>
+        function logout() {
+            alert('Logging out...');
+            window.location.href = 'login.html'; 
+        }
+    </script>
+        </li>
+      </ul>
+    </aside>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Refund</title>
+    <link rel="stylesheet" href="reqrefund.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Request Refund</h1>
+        <p>Please fill out the details below to request your refund as you are graduating.</p>
+
+        <div class="form-group">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="account-no">Account No:</label>
+            <input type="text" id="account-no" placeholder="Enter your account number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ewallet-balance">E-Wallet Balance:</label>
+            <div id="ewallet-balance">3000.00</div>
+        </div>
+
+        <div class="form-group">
+            <label for="refund-reason">Reason for Refund:</label>
+            <textarea id="refund-reason" placeholder="Explain your reason for refund" required></textarea>
+        </div>
+
+        <button id="request-refund-button"><a href="refundhistory.html" class="p3">Submit Refund Request</a></button>
+        <div id="response-message" class="response-message"></div>
+    </div>
+
+    <script src="reqrefund.js"></script>
+</body>
+</html>

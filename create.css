@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+  }
+  h1{
+          color: #1c1c1c;   
+          line-height: 0.70em;
+          outline: none;
+          animation: animate 5s linear infinite;
+          -webkit-text-stroke: 0.1vw #1c1c1c       
+      }
+      @keyframes animate
+      {
+          0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+          {
+              color: #0e3742;
+              box-shadow: none;
+          }
+           18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+          {
+              color:#fff;
+              box-shadow: 0 0 10px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 40px #03bcf4,
+              0 0 80px #03bcf4,
+              0 0 160px #03bcf4,
+          }
+      }
+  button {   
+         background-color:violet;   
+          width: 20%;  
+          color: black;   
+          padding: 15px;   
+          margin: 10px 0px;  
+          border: #03bcf4;  
+          box-shadow: #1c1c1c; 
+          cursor: pointer;   
+          border-radius: 30px;  
+           }   
+           .form{
+          position: relative;
+          width: 100%;
+          max-width: 380px;
+          padding: 80px 40px 40px;
+          background: rgba(0,0,0,0.7);
+          border-radius: 10px;
+          color: #fff;
+          box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+           }
+   input[type=text], input[type=password] {   
+          width: 30%;   
+          margin: 8px 0;  
+          padding: 12px 20px;   
+          display: inline-block;
+          display: flex;   
+          border: 2px solid black; 
+          position: relative;        
+          box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+          background: rgba(0,0,0,0.7);
+          border-radius: 10px;
+          color: #fff;
+          box-sizing: border-box;           
+          border-radius: 30px;  
+      }  
+   button:hover {   
+          opacity: 0.6;   
+      }   
+    .cancelbtn {   
+          width: auto;   
+          padding: 10px 18px;  
+          margin: 10px 5px;  
+      }   
+      .signup {  
+          position: relative;
+          left: 495px;
+          width: 600px;
+          height: 780px;
+          border: 2px solid rgb(0, 0, 0); 
+          padding: 10px;   
+          background-color: transparent;  
+          box-shadow: 6px 9px rgb(0, 0, 0);
+          border-radius: 40px 40px;
+      }
+      .error {
+          color: red;
+      } 
+   .container {   
+          padding: 25px;   
+          background-color: transparent;  
+         }   
+     .icon a{
+      text-decoration:100;
+      color: yellow;
+  }
+  .icon ion-icon{
+      color: black;
+     font-size: 30px; 
+      padding-left: 20px;
+      padding-right: 35px;
+      padding-top: 30px;
+      transition: 0.7s ease;
+  }   

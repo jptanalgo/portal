@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT PORTAL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="dlreceipt.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="bcplogo.jpg" alt="logo">
+        <h2>STUDENT PORTAL</h2>
+      </div>
+      <ul class="links">
+        <h4>Home</h4>
+        <li>
+          <span class="material-symbols-outlined">person</span>
+          <a href="homeprofile.html">Profile</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">grade</span>
+          <a href="grades.html">Grades</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">event</span>
+          <a href="events.html">Events</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">dashboard</span>
+          <a href="ewallet.html">E-wallet</a>
+        </li>
+        <hr>
+        <h4>Account</h4>
+        <li>
+          <span class="material-symbols-outlined">bar_chart</span>
+          <a href="overview.html">Overview</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">mail</span>
+          <a href="concern.html">Concern</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">settings</span>
+          <a href="setting.html">Settings</a>
+        </li>
+        <li class="logout-link">
+          <span class="material-symbols-outlined">logout</span>
+          <a href="splogin.html" "logout()">Log Out</a>
+    </div>
+    <script>
+        function logout() {
+            alert('Logging out...');
+            window.location.href = 'login.html'; 
+        }
+    </script>
+        </li>
+      </ul>
+    </aside>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Download Receipt</title>
+    <link rel="stylesheet" href="dlreceipt.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1>Upload Screenshot</h1>
+        <input type="file" id="file-input" accept="image/*" />
+        <button id="upload-button">Upload</button>
+        <br />
+        <img id="preview" src="" alt="Preview" style="display: none; max-width: 100%; margin-top: 20px;" />
+        <br />
+        <button id="download-button" style="display: none;">Download Receipt</button>
+
+        <div class="buttons">
+            <button type="button" id="previous-button"> <a href="accname.html" class="p3">Previous</a>  </button>
+            <button type="button" id="next-button"> <a href="deposithistory.html" class="p3">Completed</a>  </button>
+        </div>
+    </div>
+</center>
+    <script src="dlreceipt.js"></script>
+</body>
+</html>
+
