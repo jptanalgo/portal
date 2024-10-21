@@ -5,76 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDENT PORTAL</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="ru.css">
+    <link rel="stylesheet" href="../css/ru.css">
   </head>
   <body>
     <aside class="sidebar">
       <div class="logo">
-        <img src="bcplogo.jpg" alt="logo">
+        <img src="../bcplogo.jpg" alt="logo">
         <h2>STUDENT PORTAL</h2>
+        </div>
+        <ul class="links">
+          <h4>Home</h4>
+          <li>
+            <span class="material-symbols-outlined"></span>
+            <a href="../php/view.php">Student Account</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"></span>
+            <a href="../php/create.php">Create Account</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">person</span>
+            <a href="homeprofile.html">Profile</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">grade</span>
+            <a href="grades.html">Grades</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">event</span>
+            <a href="events.html">Events</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">dashboard</span>
+            <a href="ewallet.html">E-wallet</a>
+          </li>
+          <hr>
+          <h4>Account</h4>
+          <li>
+            <span class="material-symbols-outlined">bar_chart</span>
+            <a href="overview.html">Overview</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">mail</span>
+            <a href="concern.html">Concern</a>
+          </li>
+           <li>
+            <span class="material-symbols-outlined">medical_services</span>
+            <a href="medical.html">Medical</a>
+          </li>
+              <li>
+            <span class="material-symbols-outlined">how_to_vote</span>
+            <a href="eval.html">Evaluation</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">settings</span>
+            <a href="setting.html">Settings</a>
+          </li>
+          <li class="logout-link">
+            <span class="material-symbols-outlined">logout</span>
+            <a href="../php/splogin.php" "logout()">Log Out</a>
       </div>
-      <ul class="links">
-        <h4>Home</h4>
-        <li>
-          <span class="material-symbols-outlined">person</span>
-          <a href="homeprofile.html">Profile</a>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">grade</span>
-          <a href="grades.html">Grades</a>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">event</span>
-          <a href="events.html">Events</a>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">dashboard</span>
-          <a href="ewallet.html">E-wallet</a>
-        </li>
-        <hr>
-        <h4>Account</h4>
-        <li>
-          <span class="material-symbols-outlined">bar_chart</span>
-          <a href="overview.html">Overview</a>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">mail</span>
-          <a href="concern.html">Concern</a>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">settings</span>
-          <a href="setting.html">Settings</a>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">medical_services</span>
-          <a href="medical.html">Medical</a>
-        </li>
-            <li>
-          <span class="material-symbols-outlined">how_to_vote</span>
-          <a href="eval.html">Evaluation</a>
-        </li>
-        <li class="logout-link">
-          <span class="material-symbols-outlined">logout</span>
-          <a href="splogin.html" "logout()">Log Out</a>
-    </div>
-    <script>
-        function logout() {
-            alert('Logging out...');
-            window.location.href = 'login.html'; 
-        }
-    </script>
-        </li>
-      </ul>
-    </aside>
-  </body>
-</html>
-
+      <script>
+          function logout() {
+              alert('Logging out...');
+              window.location.href = 'login.html'; 
+          }
+      </script>
+          </li>
+        </ul>
+      </aside>
+      
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ru.css">
+    <link rel="stylesheet" href="../css/ru.css">
     <title>Sliding Form</title>
 </head>
 <body>
@@ -161,6 +167,6 @@
         </div>
     </div>
   </center>
-  <script src="ru.js"></script>
+  <script src="../js/ru.js"></script>
 </body>
 </html>

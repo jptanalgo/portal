@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDENT PORTAL</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="reqrefund.css">
+    <link rel="stylesheet" href="../css/reqrefund.css">
   </head>
   <body>
     <aside class="sidebar">
       <div class="logo">
-        <img src="bcplogo.jpg" alt="logo">
+        <img src="../bcplogo.jpg" alt="logo">
         <h2>STUDENT PORTAL</h2>
       </div>
       <ul class="links">
         <h4>Home</h4>
+        <li>
+          <span class="material-symbols-outlined"></span>
+          <a href="../php/view.php">Student Account</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined"></span>
+          <a href="../php/create.php">Create Account</a>
+        </li>
         <li>
           <span class="material-symbols-outlined">person</span>
           <a href="homeprofile.html">Profile</a>
@@ -41,11 +49,7 @@
           <span class="material-symbols-outlined">mail</span>
           <a href="concern.html">Concern</a>
         </li>
-        <li>
-          <span class="material-symbols-outlined">settings</span>
-          <a href="setting.html">Settings</a>
-        </li>
-        <li>
+         <li>
           <span class="material-symbols-outlined">medical_services</span>
           <a href="medical.html">Medical</a>
         </li>
@@ -53,9 +57,13 @@
           <span class="material-symbols-outlined">how_to_vote</span>
           <a href="eval.html">Evaluation</a>
         </li>
+        <li>
+          <span class="material-symbols-outlined">settings</span>
+          <a href="setting.html">Settings</a>
+        </li>
         <li class="logout-link">
           <span class="material-symbols-outlined">logout</span>
-          <a href="splogin.html" "logout()">Log Out</a>
+          <a href="../php/splogin.php" "logout()">Log Out</a>
     </div>
     <script>
         function logout() {
@@ -66,7 +74,6 @@
         </li>
       </ul>
     </aside>
-
 
 <!DOCTYPE html>
 <html lang="en">

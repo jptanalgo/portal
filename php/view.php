@@ -45,97 +45,85 @@ if (isset($_GET['delete'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDENT PORTAL</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="homeprofile.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../css/view.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <aside class="sidebar">
         <div class="logo">
-            <img src="bcplogo.jpg" alt="logo">
+            <img src="../bcplogo.jpg" alt="logo">
             <h2>STUDENT PORTAL</h2>
-        </div>
+            </div>
         <ul class="links">
             <h4>Home</h4>
             <li>
+            <span class="material-symbols-outlined"></span>
+            <a href="view.php">Student Account</a>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"></span>
+            <a href="create.php">Create Account</a>
+          </li>
+            <li>
                 <span class="material-symbols-outlined">person</span>
-                <a href="/html/homeprofile.html">Profile</a>
+                <a href="../html/homeprofile.html">Profile</a>
             </li>
             <li>
                 <span class="material-symbols-outlined">grade</span>
-                <a href="/html/grades.html">Grades</a>
+                <a href="../html/grades.html">Grades</a>
             </li>
             <li>
                 <span class="material-symbols-outlined">event</span>
-                <a href="/html/events.html">Events</a>
+                <a href="../html/events.html">Events</a>
             </li>
             <li>
                 <span class="material-symbols-outlined">dashboard</span>
-                <a href="/html/ewallet.html">E-wallet</a>
+                <a href="../html/ewallet.html">E-wallet</a>
             </li>
             <hr>
             <h4>Account</h4>
             <li>
                 <span class="material-symbols-outlined">bar_chart</span>
-                <a href="/html/overview.html">Overview</a>
+                <a href="../html/overview.html">Overview</a>
             </li>
             <li>
                 <span class="material-symbols-outlined">mail</span>
-                <a href="/html/concern.html">Concern</a>
+                <a href="../html/concern.html">Concern</a>
             </li>
             <li>
                 <span class="material-symbols-outlined">settings</span>
-                <a href="/html/setting.html">Settings</a>
+                <a href="../html/setting.html">Settings</a>
             </li>
             <li>
                 <span class="material-symbols-outlined">medical_services</span>
-                <a href="/html/medical.html">Medical</a>
+                <a href="../html/medical.html">Medical</a>
               </li>
                   <li>
                 <span class="material-symbols-outlined">how_to_vote</span>
-                <a href="/html/eval.html">Evaluation</a>
-              </li>
-               <li>
-                <span class="material-symbols-outlined"></span>
-                <a href="create.php">Create Account</a>
-              </li>
-              <li>
-                <span class="material-symbols-outlined"></span>
-                <a href="view.php">Student Account</a>
-              </li>
+                <a href="../html/eval.html">Evaluation</a>
+              </li>    
             <li class="logout-link">
-                <span class="material-symbols-outlined">logout</span>
-                <a href="javascript:void(0);" onclick="logout()">Log Out</a>
-            </li>
+            <span class="material-symbols-outlined">logout</span>
+            <a href="splogin.php" "logout()">Log Out</a>
+      </div>
+      <script>
+          function logout() {
+              alert('Logging out...');
+              window.location.href = 'login.html'; 
+          }
+      </script>
+          </li>
         </ul>
-    </aside>
+      </aside>
+    
 <body>   
     <center>
-        <br>
-        <h1>REGISTRATION</h1><br><br>
-    </center>
-    
-    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <center>
-            <label>Username: </label>
-            <input type="text" placeholder="Enter Username" name="Username" value="<?php echo htmlspecialchars($Username); ?>">
-            <br><span class="error"><?php echo $UsernameErr; ?></span>
-        </center>
-
+        
         <!-- Password and other fields here -->
         <!-- Account Type -->
-        <center>
-            <label>Account Type: </label>
-            <select name="AccountType">
-                <option value="2" selected>Student</option>
-            </select>
-        </center>
-        <br>
-        <center>
-            <button type="submit">Create Account</button>
-        </center>
-    </form>
+        
 
     <!-- Display the user table -->
-    <h2 style="text-align:center;">Registered Users</h2>
+    <br><br><br><h2 style="text-align:center;">Registered Users</h2>
     <table border="1" width="80%" align="center">
         <tr>
             <th>ID</th>
